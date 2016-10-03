@@ -2,10 +2,10 @@ package udsfs
 
 import (
 	"math/rand"
-	"sensorbee/bql"
 	"strings"
 	"time"
 
+	"gopkg.in/sensorbee/sensorbee.v0/bql"
 	"gopkg.in/sensorbee/sensorbee.v0/core"
 	"gopkg.in/sensorbee/sensorbee.v0/data"
 )

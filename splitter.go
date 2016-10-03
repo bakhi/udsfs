@@ -37,7 +37,7 @@ func (w *WordSplitter) Terminate(ctx *core.Context) error {
 	return nil
 }
 
-func CreatWordSplitter(decl udf.UDSFDeclarer, inputStream, field string) (udf.UDSF, error) {
+func CreateWordSplitter(decl udf.UDSFDeclarer, inputStream, field string) (udf.UDSF, error) {
 	if err := decl.Input(inputStream, nil); err != nil {
 		return nil, err
 	}

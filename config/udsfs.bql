@@ -1,0 +1,5 @@
+CREATE SOURCE lorem TYPE Lorem;
+CREATE STREAM lorem_words AS
+    SELECT RSTREAM * FROM word_splitter("lorem", "text") [RANGE 1 TUPLES];
+
+SELECT RSTREAM * FROM lorem_words [RANGE 1 TUPLES];

@@ -1,2 +1,2 @@
 plugins:
-  - github.com/sensorbee/tutorial/wordcount/plugin
+  - github.com/bakhi/udsfs/plugin

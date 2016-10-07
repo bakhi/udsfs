@@ -20,7 +20,7 @@ var (
 )
 */
 
-var Lorem = strings.Split(strings.Replace("lorem ipsum dolor sit amet consectetur adipiscing elit", "\n", " ", -1), " ")
+var Lorem = strings.Split(strings.Replace("lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborumlorem ipsum dolor sit amet consectetur adipiscing elit", "\n", " ", -1), " ")
 
 type LoremSource struct {
 	interval time.Duration
@@ -49,7 +49,7 @@ func (l *LoremSource) Stop(ctx *core.Context) error {
 }
 
 func CreateLoremSource(ctx *core.Context, ioParams *bql.IOParams, params data.Map) (core.Source, error) {
-	interval := 1 * time.Second
+	interval := 1 * time.Microsecond
 	if v, ok := params["interval"]; ok {
 		i, err := data.ToDuration(v)
 		if err != nil {

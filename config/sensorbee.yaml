@@ -1,6 +1,6 @@
 topologies:
-  wordcount:
+  udsfs:
     bql_file: udsfs.bql
 
 network:
-  listen_on: "192.168.0.92:15601"
+  listen_on: ":15601"
